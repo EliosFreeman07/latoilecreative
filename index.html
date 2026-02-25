@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaToileCréative</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Amarante&family=Dancing+Script:wght@400..700&family=New+Rocker&family=Rye&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- IMAGE GAUCHE -->
+    <section class="image-container">
+      <div class="image-content">
+        <h1 class="image-title">LaToileCréative</h1>
+        <p class="image-copyright">© 2026 LaToileCréative</p>
+      </div>
+    </section>
+
+    <section class="text-container">
+      <!-- TEXTE DROITE -->
+      <section class="section1">
+        <div class="logo-container">
+          <img src="Logo1.png" alt="Logo LaToileCréative" />
+        </div>
+
+        <div>
+          <h2>À propos de LaToileCréative</h2>
+          <p>
+            Derrière LaToileCréative, il y a un développeur web indépendant
+            convaincu que le web doit rester simple, humain et accessible —
+            surtout pour les activités locales.<br /><br />
+            Basé dans les Monts d'Ardèche, j’accompagne les artisans, artistes,
+            gîtes, producteurs, associations et petits commerces dans la
+            création de sites internet qui leur ressemblent : des sites clairs,
+            esthétiques et efficaces, pensés pour mettre en valeur votre
+            savoir-faire et faciliter le contact avec vos clients.<br /><br />
+            Avec vous, je prends le temps de comprendre votre activité, vos
+            valeurs et votre public pour créer une présence en ligne cohérente,
+            durable et juste.<br /><br />
+            Mon objectif : vous aider à trouver votre place sur la toile, sans
+            vous dénaturer, avec un site que vous comprenez et que vous pouvez
+            faire évoluer.
+          </p>
+        </div>
+
+        <div>
+          <h2>Une approche artisanale du web</h2>
+          <p>
+            - un seul interlocuteur<br />
+            - des explications claires<br />
+            - des solutions adaptées à vos besoins réels<br />
+            - un site que vous comprenez et que vous pouvez faire vivre<br />
+          </p>
+          <p id="approche">
+            LaToileCréative, la création de sites web de celles et de ceux qui
+            font vivre le local.
+          </p>
+        </div>
+      </section>
+
+      <section class="section2">
+        <h2>Mes réalisations</h2>
+        <div>
+          <img src="#" alt="" />
+          <h3>Site web "Les Terrasses des Boutisses"</h3>
+          <p>Ajoute autant de contenu que tu veux ici.</p>
+        </div>
+
+        <div>
+          <img src="#" alt="" />
+          <h3>Site web "Philippe Croze, artisan d'objets"</h3>
+          <p>Ajoute autant de contenu que tu veux ici.</p>
+        </div>
+      </section>
+
+      <section class="section3">
+        <h2>Prestations</h2>
+
+        <h3>Sites vitrines</h3>
+        <p>
+          Un site vitrine est idéal si vous souhaitez :<br />
+          - être visible sur internet<br />
+          - présenter votre activité, vos services ou vos créations<br />
+          - inspirer confiance et faciliter les prises de contact<br />
+          Inclus :<br />
+          - design personnalisé<br />
+          - site responsive (ordinateur, tablette, mobile)<br />
+          - pages essentielles (accueil, à propos, services, contact…)<br />
+          - optimisation de base pour le référencement local<br />
+          - formulaire de contact simple<br />
+          - accompagnement et conseils tout au long du projet
+        </p>
+        <h3 id="site">Site e-commerce</h3>
+        <p>
+          Pour les créateurs, artisans et producteurs qui souhaitent vendre
+          leurs produits en ligne.<br />
+          Inclus :<br />
+          - boutique en ligne sur mesure<br />
+          - gestion des produits et des catégories<br />
+          - paiement sécurisé<br />
+          - adaptation mobile<br />
+          - mise en valeur de vos produits (photos, descriptions)<br />
+          - conseils pour une prise en main autonome
+        </p>
+      </section>
+
+      <section class="section4">
+        <h2>Tarifs des prestations</h2>
+        <p><b>Forfait de base (1 ou 2 pages) :</b> 390 €</p>
+        <p><b>Site vitrine (5 pages et plus) :</b> à partir de … 590€</p>
+        <p>
+          <b>Service webmaster 12 mois (forfait 3 heures) :</b> 120 € (heure
+          sup. à 55€)<br />
+          (Assistance technique pour votre site web, modifications, nom de
+          domaine, email, SEO…)
+        </p>
+      </section>
+
+      <section class="section5">
+        <h2>Formulaire de contact</h2>
+        <form action="contact.php" method="post" class="formulaire">
+          <label for="nom">Votre nom :</label>
+          <input type="text" id="nom" name="nom" required /><br />
+
+          <label for="prenom">Votre prénom :</label>
+          <input type="text" id="prenom" name="prenom" required /><br />
+
+          <label for="email">Votre e-mail :</label>
+          <input type="email" id="email" name="email" required /><br />
+
+          <label for="message">Message :</label>
+          <textarea name="message" id="message" rows="15" required></textarea
+          ><br /><br />
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </section>
+
+    <!-- <script>
+  const img = document.querySelector('.image-container');
+  
+  window.addEventListener('scroll', () => {
+  if (window.scrollY < 140) {
+    img.style.transform = 'translateY(-50%)';
+  } else {
+    img.style.transform = "translateY(0)";
+  }     
+});
+
+</script> -->
+  </body>
+</html>

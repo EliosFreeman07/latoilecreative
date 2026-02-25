@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Adlery Swash';
+  src: url('./fonts/Adlery-Swash.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* IMAGE À GAUCHE */
+.image-container {
+  width: 40%;
+  position: sticky;
+  /* → sticky (gère le scroll) */
+  top: 0;
+  height: 160vh;
+  background-image: url("devWeb.avif");
+  /* ton image */
+  background-size: cover;
+  background-position: center top;
+}
+
+/* CONTENU FIXE SUR L'IMAGE */
+.image-content {
+  position: fixed;
+  height: 100%;
+  width: 40%;
+  /* permet de ne pas couper le texte "© 2026 LaToileCréative" en 2 lignes */
+  color: black;
+  text-shadow: rgb(194, 86, 86) 1em 1em 0.2em;
+}
+
+/* TITRE EN HAUT */
+.image-title {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+  font-size: 3rem;
+  font-family: 'Adlery Swash';
+  letter-spacing: 0.6rem;
+}
+
+/* COPYRIGHT EN BAS */
+.image-copyright {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* TEXTE À DROITE */
+.text-container {
+  width: 60%;
+  padding: 0 3rem 3rem;
+  background-color: #faecd1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#logo img {
+  width: 15rem;
+  height: 12rem;
+}
+
+.logo-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.section1 {
+  margin-top: 14rem;
+}
+
+h2 {
+  font-family: 'Adlery Swash';
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+
+.section1 p {
+  line-height: 1.2rem;
+  font-family: 'amarante', serif;
+  font-size: 1.2rem;
+}
+
+#approche {
+  padding-top: 1rem;
+}
+
+.section2 {
+  font-size: 1.2rem;
+}
+
+.section3 h3 {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: 'amarante', serif;
+}
+
+#site {
+  padding-top: 1rem;
+}
+
+.section3 p {
+  line-height: 1.2rem;
+  font-family: 'amarante', serif;
+  font-size: 1.2rem;
+}
+
+.section4 p {
+  padding-bottom: 0.5rem;
+  font-family: 'amarante', serif;
+  font-size: 1.2rem;
+}
+
+.section5 {
+  margin: auto;
+}
+
+.section5 h2 {
+  text-align: center;
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulaire input {
+  height: 3rem;
+  width: 30rem;
+  padding: 0.3rem;
+  font-family: 'amarante', serif;
+  font-size: 1.2rem;
+}
+
+.formulaire label {
+  font-family: 'amarante', serif;
+  font-size: 1.3rem;
+}
+
+.formulaire textarea {
+  padding: 0.3rem;
+  font-family: 'amarante', serif;
+  font-size: 1.2rem;
+}
+
+.formulaire button {
+  height: 2rem;
+  width: 10rem;
+  align-self: center;
+  font-family: 'amarante', serif;
+  font-size: 1.2rem;
+  background-color: aqua;
+  transition: 1s;
+}
+
+.formulaire button:hover {
+  transform: scale(1.2);
+  transition: 1s;
+  cursor: pointer;
+  background-color: rgb(28, 200, 200);
+}
+
+@media (max-width: 1090px) {
+
+
+  .image-container,
+  .text-container {
+    width: 100%;
+  }
+}
+
+@media screen and(max-width: 425) {
+  .image-container {}
+
+  body {
+    flex-direction: column;
+  }
+}
