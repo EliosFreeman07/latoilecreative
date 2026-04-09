@@ -101,6 +101,14 @@ h2 {
 .section2 {
   font-size: 1.2rem;
 }
+.section2 img {
+  width: 20rem;
+  height: 12rem;
+  margin: 1rem;
+}
+.section2 img:hover {
+  cursor: pointer;
+}
 
 .section3 h3 {
   padding-bottom: 1rem;
